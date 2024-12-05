@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="py-5">
+      <section class="py-2">
+        <div class="container">
+          <div id="signupBox" class="boxContainer text-center p-3 w-75 mx-auto">
+            <h1 class="my-4">Smart Login System</h1>
+            <div class="inputsForm">
+              <input
+                type="text"
+                id="signupName"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                id="signupEmail"
+                class="form-control mt-3"
+                placeholder="Enter your email"
+                required
+              />
+              <input
+                type="password"
+                id="signupPassword"
+                class="form-control my-3"
+                placeholder="Enter your password"
+                required
+              />
+              <small id="inputs-required" class="text-danger d-none"
+                >All inputs is required</small
+              >
+              <small id="success-msg" class="d-none">Success</small>
+              <small id="email-exst" class="text-danger d-none"
+                >email already exists</small
+              >
+              <button id="signupBtn" class="btn btn-main my-4 w-100">
+                Sign up
+              </button>
+              <div class="loginText d-flex justify-content-center gap-2 mt-1">
+                <p class="text-white">Already have an account?</p>
+                <a class="text-decoration-none" id="loginAnchor">Log in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
